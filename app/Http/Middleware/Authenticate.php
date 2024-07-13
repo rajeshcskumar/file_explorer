@@ -16,6 +16,7 @@ class Authenticate extends Middleware
     protected function redirectTo(Request $request): ?string
     {
         if (!$request->expectsJson()) {
+            session()->flash("warning", "Please login first to access dashboard");
             return route('login');
         } else {
             return redirect()->back();

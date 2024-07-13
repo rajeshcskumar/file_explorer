@@ -1,3 +1,3 @@
 <div>
-   <x-common.alert />
+    <x-common.toast />
 </div>

@@ -18,8 +18,10 @@
                         Profile
                     </a>
                 </li>
-                <li><a>Logout</a></li>
+                <li><a href="#" onclick="logoutModal.showModal()">Logout</a></li>
             </ul>
         </div>
     </div>
+
+    <livewire:auth.logout lazy />
 </div>
