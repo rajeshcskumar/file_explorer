@@ -4,6 +4,7 @@
             Files</a>
     </div>
     <div class="flex-none">
+        <button class="btn btn-warning btn-sm mr-3" onclick="AddFileModal.showModal()">Add File</button>
         <x-common.theme-switch />
         <div class="dropdown dropdown-end ml-3">
             <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
@@ -24,4 +25,5 @@
     </div>
 
     <livewire:auth.logout lazy />
+    <livewire:files.add-file lazy />
 </div>
