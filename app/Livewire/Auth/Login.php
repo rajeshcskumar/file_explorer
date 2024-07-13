@@ -18,11 +18,13 @@ class Login extends Component
     }
 
 
-    public function login() {
+    public function login()
+    {
         $credentials = $this->validate([
             "email" => 'required|min:2|max:30',
             'password' => 'required'
         ]);
+
 
         if (Auth::attempt($credentials)) {
             session()->regenerate();
