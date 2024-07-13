@@ -5,7 +5,8 @@
         </div>
         <div class="h-screen flex justify-center items-center">
             <form class="w-[500px]" action="">
-                <div>
+                <x-common.alert />
+                <div class="my-2">
                     <h1 class="text-2xl font-bold">Login</h1>
                     <p>Welcome back to file explorer</p>
                 </div>
