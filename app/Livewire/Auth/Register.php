@@ -5,6 +5,10 @@ namespace App\Livewire\Auth;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
 use Livewire\Component;
+use Livewire\Attributes\Layout;
+use Livewire\Attributes\Title;
+
+#[Layout('components.layouts.auth')]
 
 class Register extends Component
 {
@@ -13,6 +17,7 @@ class Register extends Component
     {
         return view('livewire.auth.register');
     }
+    #[Title('Register')]
     public function register()
     {
         $validate = $this->validate([
