@@ -1,6 +1,8 @@
 <div>
     <x-common.toast />
     <div class="px-2 flex justify-center flex-col items-center">
+        <input type="text" class="input input-bordered w-96 rounded-2xl mb-4" placeholder="Search..."
+        wire:model.live='search' />
         <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2">
             @if (count($files) > 0)
                 @foreach ($files as $item)

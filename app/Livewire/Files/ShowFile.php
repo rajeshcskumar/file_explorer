@@ -19,6 +19,10 @@ class ShowFile extends Component
         $this->id = $id;
     }
 
+    public function placeholder()
+    {
+        return view('components.common.loader');
+    }
 
     public function render()
     {

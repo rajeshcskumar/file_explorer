@@ -10,6 +10,8 @@ use Livewire\Attributes\Title;
 class Dashbaord extends Component
 {
     #[Title('dashbaord')]
+
+    public $search;
     public function render()
     {
         $user = Auth::guard('web')->user();
