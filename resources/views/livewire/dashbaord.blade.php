@@ -27,4 +27,7 @@
             @endif
         </div>
     </div>
+    <div class="text-center px-10 lg:px-32">
+        {{ $files->links() }}
+    </div>
 </div>
